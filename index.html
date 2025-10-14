@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> H3RO - Tienda Gamer - Novedades en Videojuegos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="indice">
+      <h1 class="logo">INDICE</h1>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#novedades">Novedades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-media">
+        
+      </div>
+      <div class="hero-text">
+        <h2>Novedades y portadas destacadas</h2>
+        <p>Descubrí los lanzamientos más calientes del mundo gamer y reservá hoy.</p>
+      </div>
+    </section>
+
+    <section id="productos" class="productos">
+      <article class="card" onclick="abrirModal('Juego 1', 'Descripción detallada del videojuego 1.')">
+        <div class="card-media"><img src="images/imagen1.jpg" alt="Portada Juego 1"></div>
+        <div class="card-body"><h3>Imagen 1</h3><p>Breve descripción del videojuego 1.</p><a class="btn" href="#">Ver más</a></div>
+      </article>
+
+      <article class="card" onclick="abrirModal('Juego 2', 'Descripción detallada del videojuego 2.')">
+        <div class="card-media"><img src="images/imagen2.jpg" alt="Portada Juego 2"></div>
+        <div class="card-body"><h3>Imagen 2</h3><p>Breve descripción del videojuego 2.</p><a class="btn" href="#">Ver más</a></div>
+      </article>
+
+      <article class="card" onclick="abrirModal('Juego 3', 'Descripción detallada del videojuego 3.')">
+        <div class="card-media"><img src="images/imagen3.jpg" alt="Portada Juego 3"></div>
+        <div class="card-body"><h3>Imagen 3</h3><p>Breve descripción del videojuego 3.</p><a class="btn" href="#">Ver más</a></div>
+      </article>
+    </section>
+
+    <section class="accesos-rapidos">
+      <a id="catalogo" class="big-link" href="#productos">Opción Visitar Catálogo</a>
+      <a id="novedades" class="big-link" href="#inicio">Últimas Novedades</a>
+    </section>
+
+    <section class="reseñas">
+      <h2>Reseñas destacadas</h2>
+      <div class="grid-reseñas">
+        <div class="reseña">"Una joya narrativa" — Revista Gamer</div>
+        <div class="reseña">"Multijugador adictivo" — Comunidad X</div>
+        <div class="reseña">"Banda sonora espectacular" — Crítico Y</div>
+        <div class="reseña">"Visualmente impecable" — Web Z</div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tenés preguntas o querés que sumemos un juego al catálogo? Mandanos un mensaje.</p>
+      <form action="https://formspree.io/f/{tu-id}" method="POST" class="contact-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; H3RO - 2025 Tienda Gamer. Todos los derechos reservados.</p>
+      <nav><ul><li><a href="#">Términos</a></li><li><a href="#">Privacidad</a></li></ul></nav>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{margin:0;font-family:Montserrat;background:#0b0f1a;color:white}
+.site-header,.site-footer{padding:20px;text-align:center;background:#111}
+.top-nav ul{list-style:none;display:flex;justify-content:center;gap:15px;padding:0}
+.top-nav a{color:#8a2be2;text-decoration:none}
+.hero,.productos,.reseñas,.contacto,.accesos-rapidos{padding:20px;text-align:center}
+.productos{display:flex;flex-wrap:wrap;gap:15px;justify-content:center}
+.card{background:#1a1f2e;border-radius:10px;padding:10px;width:300px}
+.card img{width:100%;border-radius:10px}
+.btn{background:#1e90ff;color:white;padding:8px 14px;border:none;border-radius:8px;text-decoration:none;display:inline-block;margin-top:10px}
+.big-link{background:#1e90ff;color:white;text-decoration:none;padding:20px;border-radius:8px;display:inline-block;width:45%;margin:5px}
+.grid-reseñas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.reseña{background:#222;padding:10px;border-radius:8px}
+.contact-form{display:flex;flex-direction:column;gap:10px;max-width:400px;margin:auto}
+input,textarea{padding:10px;border-radius:5px;border:none}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);justify-content:center;align-items:center}
+.modal-content{background:#1a1f2e;padding:20px;border-radius:8px;width:80%;max-width:400px;text-align:left}
+.close{float:right;cursor:pointer;color:#fff;font-size:24px}
+@media(max-width:600px){.productos{flex-direction:column;align-items:center}.big-link{width:90%}}
